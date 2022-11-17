@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ИП Викторова</title>
-    <link rel="stylesheet" href="index/main.css">
+    <title>404</title>
 
     <link rel="apple-touch-icon" href="icons/apple-icon(192x192).png"/>
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png"/>
@@ -32,6 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
+
 <body style="font-family: Bookerly-Light">
     <style>
         @font-face {
@@ -39,61 +39,92 @@
             src: url(index/files/Bookerly-Light.ttf)}</style>
 
 <div class="preload">
-    <img src="icons/logo-512x512.png" class="pre_logo" width="300"></div>
+    <img src="icons/logo-512x512.png" class="pre_logo" width="300"></div> 
+
+<div class="photo"><p align="center"><img src="icons/logo-512x512.png" width="150"></p></div>
+
+<div class="text"><p>404 ERROR</p></div>
+
+<div class="about"><p>Страница не найдена</p></div>
+
+<div class="link"><a href="https://viktorovva.github.io"><p>Home</a></p></div>
+
+<div class="reserved"><p>ИП Викторова Людмила<br>Сергеевна<br>2015-2022</p></div>
 
 
-<div class="photo_profile"><img src="index/files/Photo-Profile.png" width="250"></div>
+<style>
+html{
+    scroll-behavior: smooth;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+body {
+  background: #000;
+}
+a{
+   color:inherit;
+   text-decoration:none;
+   color: #90b3ff;
+}
+::-webkit-scrollbar{
+   width: 10px;
+}
+::-webkit-scrollbar-thumb{
+   border-radius: 20px;
+   background: #8b8b8b;
+}
+.photo{
+    pointer-events: none;
+}
+.text{
+    font-size: 68px;
+    text-align: center;
+    color: #fff;
+    cursor: default;
+}
+.about{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    cursor: default;
+}
+.link{
+    font-size: 32px;
+    text-align: center;
+}
+.reserved{
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.preload {
+   display: block;
+   width: 100%;
+   height: 100%;
+   background: #000000;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: all 0.7s ease-in-out;
+   z-index: 999;
+}
+.preload.invisible {
+   top: -100%;
+   opacity: 0;
+}
+.pre_logo{
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%) 
+}
+</style>
 
-<div class="name"><b>Викторова Людмила<br>Сергеевна</b></div>
-
-<div class="about">
-    Бухгалтерский налоговый учёт для организаций<br>
-    и индивидуальных предпренимателей в полном объеме.<br>
-    <br><br>
-    г.Омск</div>
-
-
-<div class="block_price">
-    <div class="text_price">Прайс</div>
-    <div class="button_position">
-        <a href="#">
-            <div class="button_price">PriceExcel.xlsx</div>
-        </a>
-    </div>
-</div>
-
-
-<div class="block_contact">
-    <div class="text_contact">Контакты</div>
-    <div class="text_mail"><a href="mailto:lsviktorova@gmail.com">lsviktorova@gmail.com</a></div>
-</div>
-
-
-<div class="block_pay">
-    <div class="text_pay">Оплата</div>
-    <div class="button_position"> 
-        <a href="https://arsenalpay.ru/pay/planer_lumari">
-            <div class="button_pay">ArsenalPay</div>
-        </a>
-    </div>
-</div>
-
-
-<div class="organization">
-    ИП Викторова Людмила Сергеевна<br>
-    2015-2022<br>
-    lsviktorova@gmail.com<br><br>
-
-    Свидетельство о гос.регистрации<br>
-    серия 55 №003813433<br><br>
-
-    ИНН: 550311621790<br>
-    ОГРНИП: 315554300011741<br><br>
-
-    пользовательское соглашение оферта
-</div>
-
-<script  src="index/script.js"></script>
-
-</body>
-</html>
+<script>
+    setTimeout(() => {document.querySelector('.preload').classList.add('invisible')},1000)
+</script>
