@@ -2,7 +2,6 @@ body {
    background: #000000;
 }
 html{
-   scroll-behavior: smooth;
    -webkit-user-select: none;
   /* Safari */
    -moz-user-select: none;
