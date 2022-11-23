@@ -433,7 +433,7 @@ input{
        font-size: 22px;
   }
 }
-#blackout_point_one, #blackout_point_two, #blackout_point_three{
+#payments, #guarantees, #return{
    background: #2020207a;
    backdrop-filter: blur(4px);
    margin: 0;
@@ -445,7 +445,7 @@ input{
    left: 0;
    display: none;
 }
-#blackout_point_one:target, #blackout_point_two:target, #blackout_point_three:target {
+#payments:target, #guarantees:target, #return:target {
    display: block;
 }
 .window_position{
