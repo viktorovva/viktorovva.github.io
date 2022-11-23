@@ -33,6 +33,9 @@ input{
    opacity: 0;
    margin-left: -100%;
 }
+.wrapper {
+   opacity: 0;
+}
 ::-webkit-scrollbar{
    width: 10px;
 }
@@ -40,7 +43,7 @@ input{
    border-radius: 20px;
    background: #8b8b8b;
 }
-.preload {
+.preload{
    display: block;
    width: 100%;
    height: 100%;
@@ -52,7 +55,7 @@ input{
    z-index: 999;
    pointer-events: none;
 }
-.preload.invisible {
+.preload.invisible{
    top: -100%;
    opacity: 0;
 }
