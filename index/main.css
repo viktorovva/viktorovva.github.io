@@ -443,10 +443,13 @@ input{
    position: fixed;
    top: 0;
    left: 0;
-   display: none;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.2s;
 }
 #payments:target, #guarantees:target, #return:target {
-   display: block;
+   visibility: visible;
+   opacity: 1;
 }
 .window_position{
    margin-left: auto;
@@ -462,7 +465,7 @@ input{
    margin-left: auto;
    margin-right: auto;
    margin-top: 1%;
-   background: #252525;
+   background: #202020;
    -webkit-user-select: text;
   /* Safari */
    -moz-user-select: text;
@@ -524,7 +527,7 @@ input{
    padding: 12px;
    border-radius: 10px;
    margin: 10px;
-   background: #313131;
+   background: #2C2C2C;
    font-size: 22px;
    cursor:pointer;
    -webkit-user-select: none;
@@ -537,7 +540,7 @@ input{
   /* Standard */
 }
 .close:hover {
-   background: #444444;
+   background: #404040;
    color:inherit;
 }
 .organization{
