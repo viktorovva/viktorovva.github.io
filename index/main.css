@@ -1,6 +1,3 @@
-body {
-   background: #000000;
-}
 html{
    -webkit-user-select: none;
   /* Safari */
@@ -10,6 +7,9 @@ html{
   /* IE10+/Edge */
    user-select: none;
   /* Standard */
+}
+body {
+   background: #000000;
 }
 a{
    color:inherit;
@@ -31,25 +31,21 @@ br{
    user-select: none;
   /* Standard */
 }
-input{
-   opacity: 0;
-   margin-left: -100%;
-}
-.wrapper {
-   opacity: 0;
-}
 ::-webkit-scrollbar{
    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
    border-radius: 20px;
-   background: #8b8b8b;
+   background: #BBBBBB;
+}
+.wrapper {
+   opacity: 0;
 }
 .preload{
    display: block;
    width: 100%;
    height: 100%;
-   background: #000;
+   background: #000000;
    position: fixed;
    top: 0;
    left: 0;
@@ -68,7 +64,6 @@ input{
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%);
-   pointer-events: none;
 }
 .photo_profile{
    margin-top: 3%;
@@ -401,6 +396,36 @@ input{
 .button_pay:hover{
    background-color: #353535;
 }
+.text_client{
+   color: #353535;
+   font-size: 18px;
+   margin-top: 1%;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+@media (min-width:280px){
+   .text_client{
+       width: 90%;
+       font-size: 14px;
+  }
+}
+@media (min-width:375px){
+   .text_client{
+       width: 90%;
+       font-size: 16px;
+  }
+}
+@media (min-width:425px){
+   .text_client{
+       width: 70%;
+  }
+}
+@media (min-width:1024px){
+   .text_client{
+       width: 60%;
+  }
+}
 .icons_pay_block{
    margin-top: 3%;
    pointer-events: none;
@@ -458,6 +483,7 @@ input{
 }
 #window{
    width: 30%;
+   height: 500px; 
    text-align: left;
    padding: 25px;
    border-radius: 30px;
@@ -466,6 +492,8 @@ input{
    margin-right: auto;
    margin-top: 1%;
    background: #202020;
+   position: static;
+   overflow-y: scroll;
    -webkit-user-select: text;
   /* Safari */
    -moz-user-select: text;

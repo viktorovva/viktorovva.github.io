@@ -27,22 +27,17 @@
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
    </head>
-   <body style="font-family: Mariupol-Medium">
+   <body style="font-family: OpenSans-Regular">
       <style>
          @font-face {
-         font-family: Mariupol-Medium;
-         src: url(index/files/Mariupol-Medium.ttf)}
+         font-family: OpenSans-Regular;
+         src: url(index/files/OpenSans-Regular.ttf);
+         }
       </style>
       <div class="preload">
          <img src="icons/logo-512x512.png" class="pre_logo" width="300" />
       </div>
-      <script>
-         window.onload = ev => {
-         document.querySelector('.wrapper').style.opacity = 1;
-         setTimeout(() => document.querySelector('.preload').classList.add('invisible'), 500)
-         }
-      </script>
-      <div class="wrapper">
+      <div class="wrapper"></div>
       <div class="logo">
          <img src="icons/logo-512x512.png" class="logotype" />
       </div>
@@ -62,47 +57,68 @@
          ИП Викторова Людмила Сергеевна<br>
          2015-2022<br><br>
          +7 913 668-33-22<br>
-         lsviktorova@gmail.com<br>
-         Юридический адрес: Омск, ул. 17-я Марьяновская, д.68 <br><br>
+         lsviktorova@gmail.com<br><br>
+         Юридический адрес:<br>Омск, ул. 17-я Марьяновская, д.68 <br><br>
          ОГРНИП 315554300011741<br>
          ИНН 550311621790<br>
       </div>
       <style>
          html{
-         scroll-behavior: smooth;
-         -webkit-user-select: none; /* Safari */
-         -moz-user-select: none; /* Firefox */
-         -ms-user-select: none; /* IE10+/Edge */
-         user-select: none; /* Standard */
+         -webkit-user-select: none;
+         /* Safari */
+         -moz-user-select: none;
+         /* Firefox */
+         -ms-user-select: none;
+         /* IE10+/Edge */
+         user-select: none;
+         /* Standard */
          }
          body {
-         background: #000;
+         background: #ffffff;
+         }
+         body.dark-theme {
+         color: #ffffff;
+         background: #000000;
+         }
+         body.dark-theme a {
+         color: #32AFED;
+         }
+         body.dark-theme a:hover {
+         color: #288dec;
+         }
+         body.dark-theme .preload{
+         background: #000000;
+         }
+         body.dark-theme .text{
+         color: #ffffff;
+         }
+         body.dark-theme .about{
+         color: #ffffff;
          }
          a{
          color:inherit;
          text-decoration:none;
+         color: #32AFED;
          transition: 0.3s;
-         color: #a7c3ff;
-         -webkit-tap-highlight-color: transparent;
          }
          a:hover{
-         color: #6898ff;
-         }
-         .wrapper {
-         opacity: 0;
+         color: #288dec;
          }
          ::-webkit-scrollbar{
          width: 10px;
          }
          ::-webkit-scrollbar-thumb{
          border-radius: 20px;
-         background: #8b8b8b;
+         background: #BBBBBB;
+         }
+         .wrapper {
+         opacity: 0;
          }
          .preload{
          display: block;
          width: 100%;
          height: 100%;
-         background: #000;
+         background: #ffffff;
          position: fixed;
          top: 0;
          left: 0;
@@ -132,11 +148,11 @@
          .text{
          font-size: 68px;
          text-align: center;
-         color: #fff;
+         color: #000000;
          cursor: default;
          }
          .about{
-         color: #fff;
+         color: #000000;
          font-size: 32px;
          text-align: center;
          cursor: default;
@@ -184,3 +200,19 @@
          }
          }
       </style>
+      <script>
+         setTimeout(() => {
+         document.querySelector('.preload').classList.add('invisible')
+         }, 1000)
+         
+         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+         
+         if (prefersDarkScheme.matches) {
+         document.body.classList.add('dark-theme');
+         } else {
+         document.body.classList.remove('dark-theme');
+         }
+      </script>
+      </div>
+   </body>
+</html>
