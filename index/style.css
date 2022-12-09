@@ -585,27 +585,13 @@ br{
 }
 @media (min-width:280px){
    .organization{
-       margin-top: 30%;
-       margin-bottom: 30%;
+       margin-top: 5em;
+       margin-bottom: 5em;
        font-size: 14px;
   }
 }
-@media (min-width:320px){
+@media (min-width:375px){
    .organization{
-       margin-top: 20%;
-       margin-bottom: 20%;
        font-size: 16px;
-  }
-}
-@media (min-width:425px){
-   .organization{
-       margin-top: 10%;
-       margin-bottom: 10%;
-  }
-}
-@media (min-width:1024px){
-   .organization{
-       margin-top: 5%;
-       margin-bottom: 5%;
   }
 }
