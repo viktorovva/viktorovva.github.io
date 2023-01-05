@@ -8,6 +8,16 @@ html{
    user-select: none;
   /* Standard */
 }
+br{
+   -webkit-user-select: none;
+  /* Safari */
+   -moz-user-select: none;
+  /* Firefox */
+   -ms-user-select: none;
+  /* IE10+/Edge */
+   user-select: none;
+  /* Standard */
+}
 body {
    background: #000000;
 }
@@ -20,16 +30,6 @@ a{
 }
 a:hover{
    color: #EF54AC;
-}
-br{
-   -webkit-user-select: none;
-  /* Safari */
-   -moz-user-select: none;
-  /* Firefox */
-   -ms-user-select: none;
-  /* IE10+/Edge */
-   user-select: none;
-  /* Standard */
 }
 ::-webkit-scrollbar{
    width: 10px;
@@ -109,6 +109,7 @@ br{
 .photo_profile_settings{
    border-radius: 10em;
    margin-top: 2em;
+   pointer-events: none;
 }
 @media (min-width:280px){
    .photo_profile_settings{
@@ -124,6 +125,14 @@ br{
    color: #fff;
    text-align: center;
    margin-top: 1em;
+   -webkit-user-select: text;
+  /* Safari */
+   -moz-user-select: text;
+  /* Firefox */
+   -ms-user-select: text;
+  /* IE10+/Edge */
+   user-select: text;
+  /* Standard */
 }
 @media (min-width:280px){
    .name{
@@ -159,6 +168,14 @@ br{
    color: #fff;
    text-align: center;
    margin-top: 2em;
+   -webkit-user-select: text;
+  /* Safari */
+   -moz-user-select: text;
+  /* Firefox */
+   -ms-user-select: text;
+  /* IE10+/Edge */
+   user-select: text;
+  /* Standard */
 }
 @media (min-width:280px){
    .description{
@@ -271,6 +288,14 @@ br{
    font-size: 32px;
    text-align: center;
    padding: 0.7em;
+   -webkit-user-select: text;
+  /* Safari */
+   -moz-user-select: text;
+  /* Firefox */
+   -ms-user-select: text;
+  /* IE10+/Edge */
+   user-select: text;
+  /* Standard */
 }
 @media (min-width:280px){
    .contact_name{
@@ -306,6 +331,14 @@ br{
    font-size: 24px;
    text-align: center;
    padding: 0.5em;
+   -webkit-user-select: text;
+  /* Safari */
+   -moz-user-select: text;
+  /* Firefox */
+   -ms-user-select: text;
+  /* IE10+/Edge */
+   user-select: text;
+  /* Standard */
 }
 @media (min-width:280px){
    .contact_data{
